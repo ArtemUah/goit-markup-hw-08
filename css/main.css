@@ -8,6 +8,13 @@ body {
   background-color: var(--page-color);
 }
 
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
 }
@@ -47,10 +54,24 @@ ol {
 }
 
 .container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 100%;
+  padding: 60px 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -203,18 +224,36 @@ ol {
   cursor: pointer;
 }
 
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .card-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card-list__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    width: 270px;
+  }
 }
 
 .card {
-  width: 270px;
+  width: 100%;
 }
 
 .card__item {
@@ -236,14 +275,18 @@ ol {
 }
 
 .card__title {
-  text-align: left;
-  width: 270px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .card__title {
+    text-align: left;
+  }
 }
 
 .card__title--btmargin {
@@ -252,7 +295,7 @@ ol {
 
 .card__text {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -309,17 +352,21 @@ ol {
 
 .team {
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
   background-size: 1600px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.1785714286;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -327,13 +374,24 @@ ol {
 .team-card {
   display: flex;
   gap: 30px;
-  width: 270px;
+  flex-wrap: wrap;
 }
 
 .team-card__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .team-card__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card__item {
+    width: 270px;
+  }
 }
 
 .team-card__text {
@@ -343,7 +401,7 @@ ol {
 .team-card__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -355,7 +413,7 @@ ol {
 
 .team-card__speciality {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
@@ -391,16 +449,11 @@ ol {
   fill: currentColor;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.clients-container {
+.clients__container {
   text-align: center;
 }
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -410,17 +463,32 @@ ol {
   color: #212121;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   gap: 30px;
+}
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: 170px;
+  }
 }
 
 .clients-link {
   display: flex;
   width: 170px;
   height: 92px;
+  width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;

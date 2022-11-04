@@ -1,17 +1,20 @@
 .team {
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
   background-size: 1600px;
+@media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
 }
 
 .team__title {
   margin-bottom: 50px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: calc(33/28);
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -19,7 +22,8 @@
 .team-card {
   display: flex;
   gap: 30px;
-  width: calc((1170px - 90px) / 4);
+  flex-wrap: wrap;
+  // width: calc((1170px - 90px) / 4);
 }
 
 .team-card__item {
@@ -27,6 +31,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
+  width: 100%;
+
+  @media screen and (min-width:768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+        @media screen and (min-width:1200px) {
+        width: 270px;
+        }
 }
 
 .team-card__text {
@@ -36,7 +49,7 @@
 .team-card__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19/16);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -48,7 +61,7 @@
 
 .team-card__speciality {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19/16);
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;

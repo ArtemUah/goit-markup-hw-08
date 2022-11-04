@@ -1,13 +1,13 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 }
 
-.clients-container {
+.clients__container {
   text-align: center;
 }
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -18,17 +18,30 @@
   color: #212121;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
-  max-width: 1200px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
   gap: 30px;
+}
+
+.clients__item {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width:768px) {
+      width: 226px;
+    }
+  
+    @media screen and (min-width:1200px) {
+      width: 170px;
+    }
 }
 
 .clients-link {
   display: flex;
   width: 170px;
   height: 92px;
+  width: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -42,5 +55,6 @@
 }
 
 .clients-svg {
+  // width: 100%;
   fill: currentColor;
 }
