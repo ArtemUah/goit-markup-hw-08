@@ -1,0 +1,54 @@
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.card-list {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  width: 270px;
+}
+
+.card__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.card__item--btmargin {
+  margin-bottom: 30px;
+}
+
+.card__svg {
+  width: 70px;
+  height: 70px;
+}
+
+.card__title {
+  text-align: left;
+  width: 270px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.card__title--btmargin {
+  margin-bottom: 10px;
+}
+
+.card__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
