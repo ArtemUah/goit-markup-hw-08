@@ -409,13 +409,13 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .hero__content {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero-bg-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg-1x.jpg);
     padding: 200px 0 452px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__content {
-    background-image: url("../../img/hero-bg-2x.jpg");
+    background-image: url("../img/hero-bg-2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (max-width: 767px) {
