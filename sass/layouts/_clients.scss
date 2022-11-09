@@ -11,11 +11,16 @@
   margin-bottom: 50px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  font-size: 28px;
+  line-height: calc(33 / 28);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
 }
 
 .clients__list {
@@ -28,13 +33,13 @@
 .clients__item {
   width: calc((100% - 30px) / 2);
 
-  @media screen and (min-width:768px) {
-      width: 226px;
-    }
-  
-    @media screen and (min-width:1200px) {
-      width: 170px;
-    }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-link {

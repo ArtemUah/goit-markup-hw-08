@@ -22,13 +22,59 @@
   </head>
   <body>
     <!--Шапка-->
-    <!-- <header class="header">
-      <div class="header__content container">
-        <nav class="nav">
-          <a lang="en" class="logo link" href="./index.html"
-            >Web<span class="logo__dark">Studio</span>
-          </a>
-          <ul class="menu list">
+    <header class="header">
+<div class="header__content container">
+
+<nav class="nav">
+  <a lang="en" class="logo link" href="./index.html">Web<span class="logo__dark">Studio</span>
+  </a>
+  <div class="main-menu__content">
+    <ul class="main-menu__list list">
+      <li class="main-menu__item">
+        <a class="main-menu__link link main-menu__link--active" href="">Студія</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link link" href="./portfolio.html">Потфоліо</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link link" href="#contacts">Контакти</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="main-menu__contacts">
+  <ul class="main-contacts list">
+        <li class="main-contacts__item">
+      <a class="main-contacts__mail main-contacts__link link" href="mailto:info@devstudio.com">
+        <svg class="main-contacts__svg-mail">
+          <use href="./img/sprite-header.svg#icon-header-mail"></use>
+        </svg>
+        info@devstudio.com</a>
+    </li>
+    <li class="main-contacts__item">
+      <a class="main-contacts__phone main-contacts__link link" href="tel:+380961111111">
+        <svg class="main-contacts__svg-phone">
+          <use href="./img/sprite-header.svg#icon-header-phone"></use>
+        </svg>
+        +38 096 111 11 11</a>
+    </li>
+    </div>
+<button class="menu__button" type="button" data-menu-open>
+  <svg class="menu__svg">
+    <use href="./img/sprite-header.svg#icon-header-menu"></use>
+  </svg>
+</button>
+<div class="menu is-hidden" data-menu>
+  <div class="menu__container">
+    <button class="menu__button menu-close__button" type="button" data-menu-close>
+      <svg class="menu__svg">
+        <use href="./img/sprite-header.svg#icon-menu-close-button"></use>
+      </svg>
+    </button>
+<div class="menu__content">
+      <nav class="nav">
+        <div class="menu__content">
+          <ul class="menu__list list">
             <li class="menu__item">
               <a class="menu__link link menu__link--active" href="">Студія</a>
             </li>
@@ -39,37 +85,51 @@
               <a class="menu__link link" href="#contacts">Контакти</a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </nav>
+      <div class="menu__contacts">
         <ul class="contacts list">
           <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg class="contacts__svg-mail">
-                <use href="./img/sprite-header.svg#icon-header-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
+            <a class="contacts__phone link" href="tel:+380961111111">
               <svg class="contacts__svg-phone">
                 <use href="./img/sprite-header.svg#icon-header-phone"></use>
               </svg>
-              +38 096 111 11 11</a
-            >
+              +38 096 111 11 11</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__mail link" href="mailto:info@devstudio.com">
+              <svg class="contacts__svg-mail">
+                <use href="./img/sprite-header.svg#icon-header-mail"></use>
+              </svg>
+              info@devstudio.com</a>
           </li>
         </ul>
+        <ul class="menu__social list">
+          <li class="menu-social__item"><a class="menu-social__link link" href="https:instagram.com" target="_blank"
+                rel="noopener noreferrer">Instagram</a></li>
+          <li class="menu-social__item"><a class="menu-social__link link" href="https:twitter.com" target="_blank"
+                rel="noopener noreferrer">Twitter</a></li>
+          <li class="menu-social__item"><a class="menu-social__link link" href="https:uk-ua.facebook.com" target="_blank"
+                rel="noopener noreferrer">Facebook</a></li>
+          <li class="menu-social__item"><a class="menu-social__link link" href="https:linkedin.com" target="_blank"
+                rel="noopener noreferrer">Linkedin</a></li>
+        </ul>
       </div>
-    </header> -->
+</div>
+</div>
+</div>
+
+    </header>
     <main>
       <!--Розділ Hero-->
-      <!-- <section class="hero">
-        <div class="hero__content container">
+      <section class="hero">
+        <div class="container hero__content">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn hero__btn" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!--Наші переваги-->
       <section class="advantages">
@@ -161,13 +221,15 @@
       </section>
 
       <!--Чим ми займаємося-->
-      <!-- <section class="work">
+      <section class="work">
         <div class="work__content container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="projects list">
             <li class="projects__item">
               <a class="projects__link link" href=""
                 ><img
+                srcset="./img/icon1.jpg 1x, 
+                ./img/icon1-2x.jpg 2x"
                   src="./img/icon1.jpg"
                   alt="Робота за комп'ютером"
                   width="370"
@@ -177,6 +239,8 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <img
+                srcset="./img/icon2.jpg 1x, 
+                ./img/icon2-2x.jpg 2x" 
                   src="./img/icon2.jpg"
                   alt="Робота за ноутбуком"
                   width="370"
@@ -186,6 +250,8 @@
             <li class="projects__item">
               <a class="projects__link link" href=""
                 ><img
+                srcset="./img/icon3.jpg 1x, 
+                ./img/icon3-2x.jpg 2x"
                   src="./img/icon3.jpg"
                   alt="Робота за планшетом"
                   width="370"
@@ -194,7 +260,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Наша Команда-->
       <section class="team">
         <div class="team__content container">
@@ -202,6 +268,8 @@
           <ul class="team-card list">
             <li class="team-card__item">
               <img
+              srcset="./img/Ihor-Demyanenko-1x.jpg 1x,
+              ./img/Ihor-Demyanenko-2x.jpg 2x"
                 src="./img/Ihor-Demyanenko.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
@@ -261,8 +329,8 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img src="./img/Olha-Repina.jpg" alt="Ольга Рєпіна" width="270" />
-              <div class="team-card__text">
+<img srcset="./img/Olha-Repina-1x.jpg 1x,
+              ./img/Olha-Repina-2x.jpg 2x" src="./img/Ihor-Demyanenko.jpg" alt="Ольга Рєпіна" width="270" />              <div class="team-card__text">
                 <h3 class="team-card__name name--btmargin">Ольга Рєпіна</h3>
                 <p lang="en" class="team-card__speciality">
                   Frontend Developer
@@ -319,11 +387,8 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img
-                src="./img/Mykola-Tarasov.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <img srcset="./img/Mykola-Tarasov-1x.jpg 1x,
+                            ./img/Mykola-Tarasov-2x.jpg 2x" src="./img/Mykola-Tarasov.jpg" alt="Микола Тарасов" width="270" />
               <div class="team-card__text">
                 <h3 class="team-card__name name--btmargin">Микола Тарасов</h3>
                 <p lang="en" class="team-card__speciality">Marketing</p>
@@ -379,11 +444,8 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img
-                src="./img/Mykhailo-Ermakov.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+            <img srcset="./img/Mykhailo-Ermakov-1x.jpg 1x,
+                          ./img/Mykhailo-Ermakov-2x.jpg 2x" src="./img/Mykhailo-Ermakov.jpg" alt="Михайло Єрмаков" width="270" />
               <div class="team-card__text">
                 <h3 class="team-card__name name--btmargin">Михайло Єрмаков</h3>
                 <p lang="en" class="team-card__speciality">UI Designer</p>
@@ -441,7 +503,7 @@
           </ul>
         </div>
       </section>
-    </main>
+    
 
     <!-- Постійні клієнти -->
     <section class="clients">
@@ -523,9 +585,9 @@
         </ul>
       </div>
     </section>
-
+</main>
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__content container">
         <div class="footer-contacts">
           <a lang="en" class="logo footer__logo link" href=""
@@ -614,7 +676,7 @@
             Підпишіться на розсилку
           </p>
           <div class="subscribe">
-            <label>
+            <label class="subscribe__label">
               <input
                 class="subscribe__input"
                 type="email"
@@ -626,11 +688,11 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Backdrop -->
-    <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal container">
         <button class="modal__button" type="button" data-modal-close>
           <svg class="modal__svg">
             <use href="./img/sprite-modal.svg#icon-close"></use>
@@ -715,7 +777,8 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

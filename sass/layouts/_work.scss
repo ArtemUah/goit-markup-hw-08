@@ -1,6 +1,15 @@
 .work {
   text-align: center;
-  padding-bottom: 94px;
+  padding-bottom: 0;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: contents;
+  }
+}
+
+.work__content {
+  padding: 0;
 }
 
 .work__title {
@@ -16,7 +25,6 @@
 .projects {
   display: flex;
   gap: 30px;
-  width: calc((1170px - 60px) / 3);
 }
 
 .projects__item {
@@ -24,6 +32,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  width: calc((1170px - 60px) / 3);
 }
 
 .projects__link > img {

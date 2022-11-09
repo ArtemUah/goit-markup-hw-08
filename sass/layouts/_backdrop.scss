@@ -1,29 +1,41 @@
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
-  width: 100%;
-  height: 100%;
+  padding: 93px 15px 94px 15px;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.2);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    padding: 208px 159px 207px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .modal {
+  position: relative;
   padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
-
   background-color: #ffffff;
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -58,12 +70,6 @@
   }
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 .modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -71,6 +77,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__list {
