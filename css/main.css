@@ -409,7 +409,7 @@ ol {
 }
 @media screen and (min-width: 1200px) {
   .hero__content {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero-bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero-bg-1x.jpg);
     padding: 200px 0 452px;
   }
 }
