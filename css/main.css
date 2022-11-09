@@ -223,6 +223,12 @@ ol {
 .main-contacts__link:hover, .main-contacts__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .main-contacts__link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
 
 .main-contacts__svg-mail {
   width: 16px;
