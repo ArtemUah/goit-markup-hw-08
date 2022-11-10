@@ -231,15 +231,27 @@ ol {
 }
 
 .main-contacts__svg-mail {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .main-contacts__svg-mail {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .main-contacts__svg-phone {
   width: 10px;
-  height: 16px;
+  height: 14px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .main-contacts__svg-phone {
+    width: 12px;
+    height: 16px;
+  }
 }
 
 .menu {
