@@ -3,13 +3,14 @@
   padding-bottom: 0;
   display: none;
 
-  @media screen and (min-width: 1200px) {
-    display: contents;
+  @media screen and (min-width:1200px) {
+    display:flex;
+    padding-bottom: 94px;
   }
 }
 
 .work__content {
-  padding: 0;
+  padding: 0 15px;
 }
 
 .work__title {
@@ -24,21 +25,16 @@
 
 .projects {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 
 .projects__item {
-  display: block;
+  display: flex;
   position: relative;
-  justify-content: center;
   align-items: center;
   width: calc((1170px - 60px) / 3);
 }
 
-.projects__link > img {
-  display: block;
-  height: 100%;
-}
 
 .projects__text {
   position: absolute;

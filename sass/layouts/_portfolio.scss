@@ -1,8 +1,16 @@
 .portfolio {
+  @media screen and (max-width:1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+
+.header__portfolio {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .portfolio-button-list {

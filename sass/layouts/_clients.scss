@@ -1,6 +1,12 @@
 .clients {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+    @media screen and (max-width:1199px) {
+        padding: 60px 15px;
+      }
+      
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__container {
@@ -8,7 +14,7 @@
 }
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
   font-size: 28px;
@@ -20,6 +26,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: calc(42 / 36);
+    margin-bottom: 50px;
   }
 }
 
