@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WebStudio that is proffessional in composing websites of different complications">
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -59,14 +60,14 @@
         +38 096 111 11 11</a>
     </li>
     </div>
-<button class="menu__button" type="button" data-menu-open>
+<button class="menu__button" type="button" aria-label="menu-open-button" data-menu-open>
   <svg class="menu__svg">
     <use href="./img/sprite-header.svg#icon-header-menu"></use>
   </svg>
 </button>
 <div class="menu is-hidden" data-menu>
   <div class="menu__container">
-    <button class="menu__button menu-close__button" type="button" data-menu-close>
+    <button class="menu__button menu-close__button" aria-label="menu-close-button" type="button" data-menu-close>
       <svg class="menu__svg">
         <use href="./img/sprite-header.svg#icon-menu-close-button"></use>
       </svg>
@@ -267,13 +268,13 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-card list">
             <li class="team-card__item">
-              <img
-              srcset="./img/Ihor-Demyanenko.jpg 1x,
-              ./img/Ihor-Demyanenko-2x.jpg 2x"
-                src="./img/Ihor-Demyanenko.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source srcset="./img/Ihor-Demyanenko-webp-270.webp" type="image/webp">
+                <source srcset="./img/Ihor-Demyanenko.jpg 1x,
+                ./img/Ihor-Demyanenko-2x.jpg 2x" type="image/jpg">
+                  <img src="./img/Ihor-Demyanenko.jpg" alt="Ігор Дем'яненко" width="270" />
+              </picture>
+            
               <div class="team-card__text">
                 <h3 class="team-card__name name--btmargin">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-card__speciality">Product Designer</p>
@@ -329,8 +330,13 @@
               </div>
             </li>
             <li class="team-card__item">
-<img srcset="./img/Olha-Repina.jpg 1x,
-              ./img/Olha-Repina-2x.jpg 2x" src="./img/Ihor-Demyanenko.jpg" alt="Ольга Рєпіна" width="270" />              <div class="team-card__text">
+              <picture>
+                <source srcset="./img/Olha-Repina-webp.webp" type="image/webp">
+                <source srcset="./img/Olha-Repina.jpg 1x,
+              ./img/Olha-Repina-2x.jpg 2x" type="image/jpg">
+<img src="./img/Olha-Repina.jpg" alt="Ольга Рєпіна" width="270" />
+              </picture>
+              <div class="team-card__text">
                 <h3 class="team-card__name name--btmargin">Ольга Рєпіна</h3>
                 <p lang="en" class="team-card__speciality">
                   Frontend Developer
@@ -387,8 +393,13 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img srcset="./img/Mykola-Tarasov.jpg 1x,
-                            ./img/Mykola-Tarasov-2x.jpg 2x" src="./img/Mykola-Tarasov.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source srcset="./img/Mykola-Tarasov-webp-270.webp" type="image/webp">
+                <source srcset="./img/Mykola-Tarasov.jpg 1x,
+                                            ./img/Mykola-Tarasov-2x.jpg 2x" type="image/jpg">
+                <img  src="./img/Mykola-Tarasov.jpg" alt="Микола Тарасов"
+                  width="270" />
+              </picture>
               <div class="team-card__text">
                 <h3 class="team-card__name name--btmargin">Микола Тарасов</h3>
                 <p lang="en" class="team-card__speciality">Marketing</p>
@@ -444,8 +455,13 @@
               </div>
             </li>
             <li class="team-card__item">
-            <img srcset="./img/Mykhailo-Ermakov.jpg 1x,
-                          ./img/Mykhailo-Ermakov-2x.jpg 2x" src="./img/Mykhailo-Ermakov.jpg" alt="Михайло Єрмаков" width="270" />
+            <picture>
+              <source srcset="./img/Mykhailo-Ermakov-webp-270.webp" type="image/webp">
+              <source srcset="./img/Mykhailo-Ermakov.jpg 1x,
+                                        ./img/Mykhailo-Ermakov-2x.jpg 2x" type="image/jpg">
+              <img src="./img/Mykhailo-Ermakov.jpg" alt="Михайло Єрмаков"
+                width="270" />
+            </picture>
               <div class="team-card__text">
                 <h3 class="team-card__name name--btmargin">Михайло Єрмаков</h3>
                 <p lang="en" class="team-card__speciality">UI Designer</p>
